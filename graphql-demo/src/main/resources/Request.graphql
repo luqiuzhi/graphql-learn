@@ -1,0 +1,9 @@
+{
+    personById(id:1) {
+        name
+    }
+    peopleByFirstName(firstName: "John") {
+        name
+        age
+    }
+}

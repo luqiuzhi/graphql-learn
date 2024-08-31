@@ -1,0 +1,19 @@
+type Query {
+    people: [User]
+    peopleByFirstName(firstName: String): [User]
+    personById(id: Int): User
+}
+
+type User {
+    id: Int,
+    name: String,
+    age: Int
+    books: [Book]
+}
+
+type Book {
+    id: Int,
+    name: String
+    author: String
+    price: Int
+}
